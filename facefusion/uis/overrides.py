@@ -8,7 +8,7 @@ from facefusion.temp_helper import create_temp_directory, get_temp_file_path
 
 def convert_video_to_playable_mp4(video_path : str) -> str:
 	video_file_size = get_file_size(video_path)
-	max_file_size = 512 * 1024 * 1024
+	max_file_size = 512 * 1024 * 1024 * 10
 
 	if video_file_size > max_file_size:
 		create_temp_directory(video_path)
